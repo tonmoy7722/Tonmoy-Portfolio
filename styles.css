@@ -150,12 +150,12 @@ ul li a:hover {
   cursor: pointer;
 }
 
-.hire__me {
+.contact__me {
   background-color: var(--primary-color);
   color: #ffffff;
 }
 
-.hire__me:hover {
+.contact__me:hover {
   background-color: var(--primary-color-dark);
 }
 
