@@ -1,22 +1,93 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<link rel="stylesheet" type="text/css" href="contact_style.css">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="contact_style.css" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <span class="big-circle"></span>
+      <img src="assets/shape.png" class="square" alt="" />
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Let's get in touch</h3>
+          <p class="text">
+            Thank you for visiting my portfolio. If you have any questions, project inquiries, or just want to say hello, 
+			feel free to reach out. Let's create something amazing together!
+          </p>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <div class="info">
+            <div class="information">
+              <img src="assets/location.png" class="icon" alt="" />
+              <p>GNN Abason, Tangail, Dhaka, Bangladesh </p>
+            </div>
+            <div class="information">
+              <img src="assets/email.png" class="icon" alt="" />
+              <p>tonmoysarkar7722@gmail.com</p>
+            </div>
+            <div class="information">
+              <img src="assets/phone.png" class="icon" alt="" />
+              <p>+880 1825-427722</p>
+            </div>
+          </div>
 
-	<title>Contact Section</title>
-</head>
-<body>
-	<div class="container">
-		<form action="https://formsubmit.co/ecaac4d3b39bbb39be0384fafd147945" method="POST">
-			<h3>Get In Touch</h3>	
-			<input type="text" name="Name" placeholder="Your Name" required>
-			<input type="email" name="Email" placeholder="Email Id" required>
-			<input type="text" name="Phone No" placeholder="Phone No" required>
-			<textarea name="Message" placeholder="How can I help you?"></textarea>
-			<button type="submit">Send</button>
-		</form>
-	</div>
-</body>
+          <div class="social-media">
+            <p>Connect with me :</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/profile.php?id=100071804127154&mibextid=ZbWKwL">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://x.com/DayTonmoy?t=LoENiVNG-xBckZHknI-EhQ&s=08">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://www.instagram.com/ts_tonmoy8?igsh=MWZmOWEzaGNyZ2RrbA==">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/tonmoy-day-sarkar-6502842b6/">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <form action="https://formsubmit.co/ecaac4d3b39bbb39be0384fafd147945" method="POST">
+            <h3 class="title">Contact me</h3>
+            <div class="input-container">
+              <input type="text" name="name" class="input" />
+              <label for="">Full name</label>
+              <span>Full name</span>
+            </div>
+            <div class="input-container">
+              <input type="email" name="email" class="input" />
+              <label for="">Email</label>
+              <span>Email</span>
+            </div>
+            <div class="input-container">
+              <input type="tel" name="phone" class="input" />
+              <label for="">Phone no</label>
+              <span>Phone no</span>
+            </div>
+            <div class="input-container textarea">
+              <textarea name="message" class="input"></textarea>
+              <label for="">Message</label>
+              <span>Message</span>
+            </div>
+            <input type="submit" value="Send" class="btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="contact.js"></script>
+  </body>
 </html>
