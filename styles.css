@@ -48,7 +48,6 @@ nav .logo a {
   color: var(--primary-color);
   transition: 0.3s;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  position: relative; /* For JS animation */
 }
 
 nav .logo a:hover {
@@ -173,6 +172,7 @@ ul li a:hover {
   color: #ffffff;
 }
 
+/* Image Slider */
 .image-slider {
   position: relative;
   width: 100%;
@@ -202,15 +202,6 @@ ul li a:hover {
   object-fit: cover;
 }
 
-@keyframes scroll-text {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-
 footer {
   position: fixed;
   bottom: 0;
@@ -230,6 +221,15 @@ footer {
 .footer-text p {
   display: inline-block;
   animation: scroll-text 40s linear infinite;
+}
+
+@keyframes scroll-text {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
 
 @media (width < 750px) {
@@ -259,15 +259,14 @@ footer {
 
   .section__container {
     padding: 10rem 1rem 5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  .content {
     text-align: center;
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .image-slider {
-    grid-area: 1/1/2/2;
-  }
-
-  .action__btns {
-    margin: auto;
   }
 }
